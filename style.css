@@ -1,0 +1,201 @@
+/* ===========================
+   LOGO
+=========================== */
+#logo {
+  font-family: "Caveat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0b2e33;
+  transition: color 0.3s ease;
+}
+
+#logo:hover {
+  color: #4f7c82;
+}
+
+/* ===========================
+   SEARCH BAR
+=========================== */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #b8e3e9;
+  border-radius: 50px;
+  border: 2px solid #9cb1b5;
+  padding: 8px 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus-within {
+  border-color: #4f7c82;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.search-icon {
+  font-size: 28px;
+  color: #4f7c82;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #0b2e33;
+  transform: scale(1.1);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 12px 10px;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #0b2e33;
+}
+
+.search-input::placeholder {
+  color: #4f7c82;
+  font-style: italic;
+}
+
+.search-btn {
+  background-color: #0b2e33;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #4f7c82;
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================
+   RIGHT ICONS
+=========================== */
+#right-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#right-icons .cursor-pointer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 10px;
+  font-size: 18px;
+  color: #9cb1b5;
+  background-color: #b8e3e9;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#right-icons .cursor-pointer:hover {
+  color: #fff;
+  background-color: #0b2e33;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#craft {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0b2e33;
+  padding: 6px 12px;
+}
+
+#craft:hover {
+  color: #fff;
+  background-color: #4f7c82;
+}
+
+#notification i,
+#profile i {
+  font-size: 24px;
+  color: #4f7c82;
+}
+
+#notification:hover i,
+#profile:hover i {
+  color: #fff;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 1024px) {
+  .search-bar {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  header > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #right-icons {
+    margin-top: 12px;
+    gap: 12px;
+  }
+
+  #craft {
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+
+  #notification i,
+  #profile i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #logo {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 12px;
+  }
+
+  .search-input {
+    margin-bottom: 10px;
+  }
+
+  .search-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #right-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 6px;
+  }
+
+  #craft {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+
+  #notification i,
+  #profile i {
+    font-size: 18px;
+  }
+}
